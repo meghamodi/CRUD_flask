@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+<div>
+  <h1>Flask CRUD</h1>
+    {% if asdaf|length < 1 %}
+    <p> There are no tasks for now</p>
+    {% else %}
+    <table>
+        <thead>
+          <tr>
+            <th>Tasks</th>
+            <th>Added</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in asdaf %}
+          <tr>
+            <td><a href="">{{ item.title }}</a></td>
+            <td>{{ item.date_created.date() }}</td>
+            <td><a href="/update/{{ item.id }}">Update</a></td>
+            <td><a href="/delete/{{ item.id }}">Delete</a></td>
+          </tr>
+
+          {% endfor %}
+        </tbody>
+      </table>
+      {% endif %}
+
+      <form action="/" method="POST">
+        <label for="newStuff">New Tasks:</label>
+        <input type="text" name="title" id="newStuff">
+        <button type="submit">Add</button>
+      </form>
+</div>
+{% endblock content %}
