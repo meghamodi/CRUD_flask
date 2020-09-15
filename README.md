@@ -5,7 +5,9 @@
 * PUT - is used for creating a new item or updating the item if its already present there.
 * POST - is used for creating an item.
 * DELETE - is used for deleting an item
-#### To run the flask application
-
+#### To run the flask application:-
+1.Install the libraries in requirements.txt using `pip install -r requirements.txt`
+2.Run the app in the working directory using `python app.py`
+ 
 #### This is how the app looks like
 ![Flask app](flask_app.png)
