@@ -5,5 +5,5 @@
 * PUT - is used for creating a new item or updating the item if its already present there.
 * POST - is used for creating an item.
 * DELETE - is used for deleting an item
-##### This is how the app looks like
+#### This is how the app looks like
 ![Flask app](flask_app.png)
